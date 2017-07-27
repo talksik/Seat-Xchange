@@ -1,0 +1,136 @@
+<!Doctype html> 
+
+<html>
+    <head>
+        <link rel="shortcut icon" href="pics/Airplane.ico" />
+        <title>Seat Mapping</title>
+        
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        
+        <link href="plane.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        
+    
+        
+    </head>
+    
+    <body>
+        <div class="bordertop"></div>
+        
+        
+        <div class="threePlanes">
+            
+            <!-- These three divs are the three divided sections on the main plane page with the title of plane and button to view maps-->
+            
+                        <div class="plane1">
+                            <a href="index.html"><img src="pics/backHome.png" id="backHome"></a>
+                            <a href="http://www.boeing.com/history/products/757.page">
+                                <h1><font size="5px">BOEING</font> <font color="#ffff00">757</font></h1> 
+                            </a>
+                            <hr><br>
+                            <h3>A popular model in recent years used as a mid-sized commercial vehicle.</h3>
+                            <img src="pics/757intro.jpg" class="introPics">
+                            <button class="togglePlane" id="sevenfiveseven">View Seat Map</button>
+                        </div>
+
+
+                        <div class="plane2">
+                            <a href="http://www.boeing.com/commercial/787/?">
+                            <h1>
+                                <font size="5px">BOEING</font> <font color="#ffff00">787</font>
+                            </h1>
+                            </a><br> 
+                            <hr>
+                            <h3>This long-hauler aircraft is known for its fuel-efficiency and components made of composite material. Also called the "<font color="yellow">Dreamliner.</font>"</h3>
+                            <img src="pics/787intro.jpg" class="introPics">
+                            <button class="togglePlane" id="seveneightseven">View Seat Map</button>
+                        </div>
+
+            
+                        <div class="plane3">
+                            <a href="http://www.airbus.com/aircraftfamilies/passengeraircraft/a380family/">
+                            <h1><font size="5px">AIRBUS</font> <font color="#ffff00">A-380</font></h1>
+                            </a>
+                            <hr><br>
+                            <h3>As a double-decker, four-engined, and wide-bodied aircraft is the world's largest passenger airline.</h3>
+                            <img src="pics/a380intro.jpg" class="introPics">
+                            <button class="togglePlane" id="threeeighty">View Seat Map</button>
+                        </div>
+            
+            
+        </div>
+        
+        <!-- The cancel button is for returning to the main plane page. There are three seat map images that hide or show up -->
+        
+                            <img src="pics/cancel.jpg" class="cancel">
+                            
+                    
+                            <img class="sevenfiveseven" src="pics/Boeing757.jpg">
+                            <img class="seveneightseven" src="pics/787.png">
+                            <img class="threeeighty" src="pics/a380.jpg">
+        
+        <!-- These are the bottom sections when the seat map pops up. It asks for request form button. -->
+                        <p class="instructions one">
+                            <br>
+                            <strong><font size="40px">Boeing 757</font></strong>
+                            <br>
+                            Please Begin the Request Form by Clicking Below.<br>
+                            <button class="request">Request</button>
+                            <img class="help" src="pics/help.png">
+                        </p>
+
+                        <p class="instructions two">
+                            <br>
+                            <strong><font size="40px">Boeing 787</font></strong>
+                            <br>
+                            Please Begin the Request Form by Clicking Below.<br>
+                            <button class="request">Request</button>
+                            <img class="help" src="pics/help.png">
+                        </p>
+
+                        <p class="instructions three">
+                            <br>
+                            <strong><font size="40px">Airbus A380</font></strong>
+                            <br>
+                            Please Begin the Request Form by Clicking Below.<br>
+                            <button class="request">Request</button>
+                            <img class="help" src="pics/help.png">
+                        </p>
+        
+        <!-- This is the popup screen/form to fill to request a seat change -->
+                   
+                        <div class="form"> 
+                            <img src="pics/cancel.jpg" class="cancel2">
+                            <h2 style="border-bottom: 1px solid grey;">Name (<font size="4px" color="yellow">Optional</font>):</h2>
+                            <input class="name" placeholder="Enter Name">
+                            <br><br>
+                            <h2>Seat Number <input class="number" placeholder="#"> <font color="gainsboro">bsbsbsbsbs</font><input class="letter" placeholder="Abcde..."> Row Letter</h2>
+                            <h2>Message</h2>
+                         
+                            <textarea class="msg" placeholder="Enter a brief message with a reason for exchanging seats."></textarea><br>
+                            
+                            <button class="submit">Submit!</button>
+                        </div>
+        
+        <!-- This is the waiting page after submitting -->
+                        <div class="loading"> 
+                            <img src="pics/cancel.jpg" class="cancel2">
+                            <img src="pics/loading.gif" class="loading">
+                            <h2 class="loading">Waiting for response</h2>
+                           
+                        </div>
+        
+                        <div class="greyOut">d</div>
+         <!-- Accepted Page -->
+                        <div class="aord">
+                            <img src="pics/cancel.jpg" class="cancel2">
+                            <h2 class="acceptordeny"></h2>
+                        </div>
+        
+        
+    
+    <script src="planeJs.js" type="text/javascript"></script>
+     
+        
+    </body>
+</html> 
